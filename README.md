@@ -105,7 +105,7 @@ python peer_server.py --port 7000
 ```
 ### 3. Create and Seed a File 🧬
 ```bash
-python peer_cli.py hello --port 7000					                          #Check the Peer is running or not (Optional)
+python peer_cli.py hello --port 7000                                    #Check the Peer is running or not (Optional)
 python peer_cli.py create --input "/path/to/file"                       #Create .torrent file (Optional, seed can automatically create it)
 python peer_cli.py seed --input "/path/to/file" --port 7000
 python peer_cli.py show-info --torrent "/path/to/created_file.torrent"  #view the medata file (Optional)
