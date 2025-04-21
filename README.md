@@ -44,6 +44,7 @@ Before running the system, make sure to configure the following (if applicable) 
 - ✅ Optional: Configure logging level or log output file in config.py or CLI flags  
 - 📁 You may also want to set a common directory for shared data between peers during local testing  
 ```bash
+#Edit peer_config.py in the Peer directory to customize:
 #Go to Peer/peer_config.py
 TRACKER_URL = <Your tracker url> 			# For example: "http://127.0.0.1:8000"
 PIECE_SIZE: int = <Your default piece length>		# For example: 256 * 1024 (256KB)
@@ -113,8 +114,8 @@ python peer_cli.py show-info --torrent created_file.torrent				#view the medata 
 ```bash
 python peer_cli.py get-torrent --port 7000
 python peer_cli.py leech --torrent downloaded_file.torrent --port 7000
-python peer_cli.py status --port 7000		#Check Status of a Peer(Optional)
+python peer_cli.py status --port 7000		#Check Status of a Peer (Optional)
 ```
-
+---
 🧪 You can run multiple peers on different ports to simulate swarm activity.  
 🚧 For more technical documentation, you can refer to ComputerNetwork_Assignment1.pdf.  
