@@ -73,15 +73,15 @@ python peer_cli.py create --input "/path/to/file"
 ```
 📤 Start Seeding a File
 ```bash
-python peer_cli.py seed --input /path/to/file --port 8001 ...
+python peer_cli.py seed --input "/path/to/file" --port 8001 ...
 ```
 📥 Download (Leech) a File
 ```bash
-python peer_cli.py seed --input /path/to/file --port 6969...
+python peer_cli.py seed --input "/path/to/file.torrent" --port 6969...
 ```
 🧾 View Torrent Metadata
 ```bash
-python peer_cli.py show-info --torrent /path/to/file.torrent
+python peer_cli.py show-info --torrent "/path/to/file.torrent"
 ```
 📑 View Status of a Peer
 ```bash
@@ -105,15 +105,15 @@ python peer_server.py --port 7000
 ```
 ### 3. Create and Seed a File 🧬
 ```bash
-python peer_cli.py hello --host 127.0.0.1 --port 7000					#Check the Peer is running or not (Optional)
-python peer_cli.py create --input "/path/to/file" --tracker http://localhost:port ...	#Create .torrent file (Optional, seed can automatically create it)
+python peer_cli.py hello --port 7000					                          #Check the Peer is running or not (Optional)
+python peer_cli.py create --input "/path/to/file"                       #Create .torrent file (Optional, seed can automatically create it)
 python peer_cli.py seed --input "/path/to/file" --port 7000
-python peer_cli.py show-info --torrent created_file.torrent				#view the medata file (Optional)
+python peer_cli.py show-info --torrent "/path/to/created_file.torrent"  #view the medata file (Optional)
 ```
 ### 4. Leech the File 📥
 ```bash
 python peer_cli.py get-torrent --port 7000
-python peer_cli.py leech --torrent downloaded_file.torrent --port 7000
+python peer_cli.py leech --torrent "/path/to/downloaded_file.torrent" --port 7000
 python peer_cli.py status --port 7000		#Check Status of a Peer (Optional)
 ```
 ---
