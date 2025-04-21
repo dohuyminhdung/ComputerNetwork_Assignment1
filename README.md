@@ -38,11 +38,11 @@ pip install -r requirements.txt
 
 ## 🛠️ Configuration
 Before running the system, make sure to configure the following (if applicable) 🚀:
-✅ Update tracker URLs in your CLI commands or default config files
-✅ Ensure open ports for peer servers 
-✅ Check path permissions for reading/writing torrent and data files
-✅ Optional: Configure logging level or log output file in config.py or CLI flags
-📁 You may also want to set a common directory for shared data between peers during local testing
+- ✅ Update tracker URLs in your CLI commands or default config files  
+- ✅ Ensure open ports for peer servers   
+- ✅ Check path permissions for reading/writing torrent and data files  
+- ✅ Optional: Configure logging level or log output file in config.py or CLI flags  
+- 📁 You may also want to set a common directory for shared data between peers during local testing  
 ```bash
 #Go to Peer/peer_config.py
 TRACKER_URL = <Your tracker url> 			# For example: "http://127.0.0.1:8000"
@@ -116,5 +116,5 @@ python peer_cli.py leech --torrent downloaded_file.torrent --port 7000
 python peer_cli.py status --port 7000		#Check Status of a Peer(Optional)
 ```
 
-🧪 You can run multiple peers on different ports to simulate swarm activity.
-🚧 For more technical documentation, you can refer to ComputerNetwork_Assignment1.pdf.
+🧪 You can run multiple peers on different ports to simulate swarm activity.  
+🚧 For more technical documentation, you can refer to ComputerNetwork_Assignment1.pdf.  
