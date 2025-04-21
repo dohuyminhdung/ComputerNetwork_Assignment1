@@ -24,7 +24,7 @@ This project demonstrates the inner workings of the BitTorrent protocol, featuri
 ### 1. 📥 Clone the Repository
 ```bash
 git clone https://github.com/dohuyminhdung/ComputerNetwork_Assignment1
-cd `ComputerNetwork_Assignment1`
+cd ComputerNetwork_Assignment1
 ```
 ### 2. 🐍 Create and Activate Virtual Environment
 ```bash
