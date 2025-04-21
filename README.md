@@ -1,6 +1,5 @@
 # Computer Network Assignment 1 🌐
 A simple implementation of a **BitTorrent-inspired** peer-to-peer file sharing system. Simulate the core behaviors of real-world torrent clients—like seeding, leeching, metadata exchange, and peer discovery—while remaining simple enough to serve as a foundation for learning and experimentation.
-
 ---
 ## 📌 Overview
 This project demonstrates the inner workings of the BitTorrent protocol, featuring:
@@ -8,7 +7,6 @@ This project demonstrates the inner workings of the BitTorrent protocol, featuri
 - **Peer clients** that handle uploading (seeding) and downloading (leeching) files in a decentralized swarm.
 - A command-line interface (CLI) for managing all core functionalities with ease.
 --- 
-
 ## ✨ Features
 - 📦 Create `.torrent` metadata files from local files/folders  
 - 🚀 Seed and distribute files to other peers  
@@ -19,7 +17,6 @@ This project demonstrates the inner workings of the BitTorrent protocol, featuri
 - 🧠 SHA-1 hashing for piece verification  
 - 📝 Logging system for tracking peer and system activity
 ---
-
 ## ⚙️ Setup
 ### 1. 📥 Clone the Repository
 ```bash
@@ -35,7 +32,7 @@ source venv/bin/activate     # On Windows: venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-
+---
 ## 🛠️ Configuration
 Before running the system, make sure to configure the following (if applicable) 🚀:
 - ✅ Update tracker URLs in your CLI commands or default config files  
@@ -51,7 +48,7 @@ PIECE_SIZE: int = <Your default piece length>		# For example: 256 * 1024 (256KB)
 DOWNLOAD_DIR = <The dictionary for downloading files>	# For example: "C:\BitTorrent\download"
 LOG_DIR = <The ditionary for system diary>		# For example: "D:\BTL1\p2pFileSharingApp" 
 ```
-
+---
 ## 🚀 Usage
 ### 🤖 For running Tracker Server
 ```bash
@@ -92,7 +89,7 @@ python peer_cli.py status --port 7891
 python peer_cli.py --help            #for a full command list
 python peer_cli.py <command> --help  #for command options   
 ```
-
+---
 ## 📚 Example Workflow
 ### 1. Start the Tracker 🌐 
 ```bash
